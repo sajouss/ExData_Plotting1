@@ -12,7 +12,7 @@ my_data$DateTime <- as.POSIXct(date_time)
 
 ## Done loading data. Let's build plot4.png
 
-
+quartz()
 par(mfrow=c(2,2), mar=c(4,4,2,1), oma=c(0,0,2,0))
 with(my_data, {
   plot(Global_active_power~DateTime,
