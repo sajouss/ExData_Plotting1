@@ -14,7 +14,7 @@ my_data$DateTime <- as.POSIXct(date_time)
 ## Dome loading data. Let's build plot3
 with(my_data, {
   plot(Sub_metering_1~DateTime, type="l",
-  ylab="Global Active Power (kilowatts)", xlab="")
+  ylab="Energy sub metering", xlab="")
   lines(Sub_metering_2~DateTime,col='Red')
   lines(Sub_metering_3~DateTime,col='Blue')
 })
